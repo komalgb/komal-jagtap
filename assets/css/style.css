@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-nav:#0E1630;
+    --text-green: #04C98D;
+    --text-lightdark: #808dad;
+    --input-color:#171F38;
+    --white-color:#fff;
+}
+.bg-nav{ background: #0E1630;}
+.text-green{ color: #04C98D;}
+.text-lightdark{ color: #808dad;}
+.input-color{ background: #171F38;}
+h1,h2,h3,h4,h5,h6,p,a,input,button{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* NavBar Section Start */
+nav .navbar-brand{
+    font-size: 30px;
+}
+nav .nav-item a{
+    color: var(--text-lightdark);
+}
+nav .nav-item a:hover{
+   color: var(--text-green);
+   transform: scale(1.09);
+    transition: 0.2s linear;
+}
+/* /NavBar Section End */
+
+/* Banner Section Start */
+.banner img{
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+    margin-left: 80px;
+}
+.banner img:hover{
+    transform: scale(1.20);
+    transition: 0.4s linear;
+}
+/* /Banner Section End */
+
+/* Skills Section Start */
+.skills .frontend img{
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid var(--text-lightdark);
+    padding: 4px;
+}
+.skills .backend img{
+    width: 80%;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid var(--text-lightdark);
+    padding: 10px;
+}
+.skills .frontend img:hover,
+.skills .backend img:hover{
+    transform: scale(1.20);
+    transition: 0.4s linear;
+}
+/* /Skills Section End */
+
+/* Footer Section Start */
+footer ul li {
+    padding-bottom: 10px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: var(--text-lightdark);
+}
+footer .info ul li a:hover{
+    color: var(--text-green);
+    transform: scale(1.20);
+    transition: 0.2s linear;
+}
+footer h4{
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+footer .social ul li a{
+    margin-right: 20px;
+}
+footer .social ul li a:hover{
+    color: var(--text-green);
+    transform: scale(1.20);
+    transition: 0.2s linear;
+}
+footer form .mb-3 textarea,
+footer form .mb-3 input{
+    background: var(--input-color);
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    color: var(--text-lightdark);
+    font-size: 15px;
+}
+footer form .btn{
+    width: 100%;
+    font-size: 14px;
+    background: var(--text-green);
+}
+footer form .btn:hover{
+    background: var(--text-lightdark);
+    color: var(--white-color);
+}
+
+/* /Footer Section End */
+
+/* Media Query Start */
+@media (max-width: 575.98px) {
+    .banner img{
+        margin-left: 45px;
+    }
+    .skills .frontend img{
+        width: 60%;
+        height: 170px;
+    }
+    .skills .col-lg-2{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .skills .backend img{
+        width: 60%;
+        height: 180px;
+    }
+    .skills .col-lg-4{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+/* /Media Query End */
