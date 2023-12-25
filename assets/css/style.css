@@ -9,11 +9,13 @@
     --text-lightdark: #808dad;
     --input-color:#171F38;
     --white-color:#fff;
+    --know-more-btn:#111827;
 }
 .bg-nav{ background: #0E1630;}
 .text-green{ color: #04C98D;}
 .text-lightdark{ color: #808dad;}
 .input-color{ background: #171F38;}
+.know-more-btn{ background: #111827;}
 h1,h2,h3,h4,h5,h6,p,a,input,button{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -23,7 +25,7 @@ nav .navbar-brand{
     font-size: 30px;
 }
 nav .nav-item a{
-    color: var(--text-lightdark);
+    color: var(--white-color);
 }
 nav .nav-item a:hover{
    color: var(--text-green);
@@ -39,10 +41,28 @@ nav .nav-item a:hover{
     border-radius: 50%;
     margin-left: 80px;
 }
-.banner img:hover{
+.banner img:hover,
+.banner img:focus{
     transform: scale(1.20);
     transition: 0.4s linear;
+    box-shadow: 0.5em 0.5em 0.5em 0.5em var(--text-green);
 }
+.banner .btn{
+    background: var(--know-more-btn);
+    padding: 10px 60px;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    font-weight: 600;
+}
+.banner .btn:hover,
+.banner .btn:focus{
+    animation: pulse 3s;
+    box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 var(--text-green); }
+  }
 /* /Banner Section End */
 
 /* Skills Section Start */
@@ -53,17 +73,23 @@ nav .nav-item a:hover{
     border: 10px solid var(--text-lightdark);
     padding: 4px;
 }
+.skills .backend-skills {
+    text-align: center;
+}
 .skills .backend img{
-    width: 80%;
-    height: 250px;
-    border-radius: 50%;
+    width: 70%;
+    height: 200px;
     border: 10px solid var(--text-lightdark);
     padding: 10px;
 }
 .skills .frontend img:hover,
-.skills .backend img:hover{
+.skills .backend img:hover,
+.skills .backend img:focus,
+.skills .frontend img:focus
+{
     transform: scale(1.20);
     transition: 0.4s linear;
+    box-shadow: 0.4em 0.4em 0.4em 0.4em var(--text-green);
 }
 /* /Skills Section End */
 
@@ -73,7 +99,7 @@ footer ul li {
 }
 footer ul li a{
     text-decoration: none;
-    color: var(--text-lightdark);
+    color: var(--white-color);
 }
 footer .info ul li a:hover{
     color: var(--text-green);
@@ -88,7 +114,6 @@ footer .social ul li a{
     margin-right: 20px;
 }
 footer .social ul li a:hover{
-    color: var(--text-green);
     transform: scale(1.20);
     transition: 0.2s linear;
 }
@@ -99,17 +124,22 @@ footer form .mb-3 input{
     border-radius: 10px;
     padding: 10px;
     border: none;
-    color: var(--text-lightdark);
     font-size: 15px;
 }
 footer form .btn{
     width: 100%;
     font-size: 14px;
-    background: var(--text-green);
+    background: var(--know-more-btn);
+    padding: 10px 60px;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    font-weight: 600;
 }
 footer form .btn:hover{
-    background: var(--text-lightdark);
     color: var(--white-color);
+    border: 1px solid var(--text-green);
+    animation: pulse 3s;
+    box-shadow: 0 0 0 2em transparent;
 }
 
 /* /Footer Section End */
