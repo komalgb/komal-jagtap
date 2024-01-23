@@ -16,8 +16,8 @@
 .text-lightdark{ color: #808dad;}
 .input-color{ background: #171F38;}
 .know-more-btn{ background: #111827;}
-h1,h2,h3,h4,h5,h6,p,a,input,button{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+h1,h2,h3,h4,h5,h6,p,a,input,button,li{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 /* NavBar Section Start */
@@ -27,37 +27,34 @@ nav .navbar-brand{
 nav .nav-item a{
     color: var(--white-color);
 }
-nav .nav-item a:hover{
-   color: var(--text-green);
-   transform: scale(1.09);
-    transition: 0.2s linear;
-}
 /* /NavBar Section End */
 
 /* Banner Section Start */
 .banner img{
-    width: 300px;
-    height: 350px;
+    width: 320px;
+    height: 370px;
     border-radius: 50%;
     margin-left: 80px;
+    border: #04C98D solid 10px;
 }
 .banner img:hover,
 .banner img:focus{
     transform: scale(1.20);
     transition: 0.4s linear;
-    box-shadow: 0.5em 0.5em 0.5em 0.5em var(--text-green);
 }
-.banner .btn{
-    background: var(--know-more-btn);
+.banner .btn a{
+    background: #04C98D;
     padding: 10px 60px;
-    border: 1px solid var(--white-color);
+    border: 1px solid #04C98D;
     color: var(--white-color);
     font-weight: 600;
+    text-decoration: none;
+    font-size: larger;
 }
 .banner .btn:hover,
 .banner .btn:focus{
-    animation: pulse 3s;
-    box-shadow: 0 0 0 2em transparent;
+    animation: pulse 2s;
+    box-shadow: 0 0 0 1em transparent;
 }
 
 @keyframes pulse {
@@ -66,7 +63,10 @@ nav .nav-item a:hover{
 /* /Banner Section End */
 
 /* Skills Section Start */
-.skills .frontend img{
+.skill{
+    color: #04C98D;
+}
+/* .skills .frontend img{
     width: 100%;
     height: 150px;
     border-radius: 50%;
@@ -90,7 +90,7 @@ nav .nav-item a:hover{
     transform: scale(1.20);
     transition: 0.4s linear;
     box-shadow: 0.4em 0.4em 0.4em 0.4em var(--text-green);
-}
+} */
 /* /Skills Section End */
 
 /* Footer Section Start */
