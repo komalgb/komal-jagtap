@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 :root{
+    --bg-green:#04C98D;
     --bg-nav:#0E1630;
     --text-green: #04C98D;
     --text-lightdark: #808dad;
@@ -11,6 +12,7 @@
     --white-color:#fff;
     --know-more-btn:#111827;
 }
+.bg-green{ background-color: #04C98D;}
 .bg-nav{ background: #0E1630;}
 .text-green{ color: #04C98D;}
 .text-lightdark{ color: #808dad;}
@@ -24,7 +26,7 @@ h1,h2,h3,h4,h5,h6,p,a,input,button,li{
 nav .navbar-brand{
     font-size: 30px;
 }
-nav .nav-item a{
+nav .nav-item a, p{
     color: var(--white-color);
 }
 /* /NavBar Section End */
@@ -35,7 +37,7 @@ nav .nav-item a{
     height: 370px;
     border-radius: 50%;
     margin-left: 80px;
-    border: #04C98D solid 10px;
+    border: var(--bg-green) solid 10px;
 }
 .banner img:hover,
 .banner img:focus{
@@ -43,9 +45,9 @@ nav .nav-item a{
     transition: 0.4s linear;
 }
 .banner .btn a{
-    background: #04C98D;
+    background: var(--bg-green);
     padding: 10px 60px;
-    border: 1px solid #04C98D;
+    border: 1px solid var(--bg-green);
     color: var(--white-color);
     font-weight: 600;
     text-decoration: none;
@@ -62,9 +64,24 @@ nav .nav-item a{
   }
 /* /Banner Section End */
 
-/* Skills Section Start */
-.skill{
-    color: #04C98D;
+/* Project Section Start */
+.project .btn {
+    background: var(--bg-green);
+    padding: 10px 60px;
+    border: 1px solid var(--bg-green);
+    color: var(--white-color);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: larger;
+}
+.project .btn:hover,
+.project .btn:focus{
+    animation: pulse 2s;
+    box-shadow: 0 0 0 1em transparent;
+}
+.project .card img{
+    width: 100%;
+    height: 120px;  
 }
 /* .skills .frontend img{
     width: 100%;
